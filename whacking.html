@@ -15,6 +15,15 @@
         document.images[i].style.visibility= "hidden";
       }
     }
+
+    function on_start() {
+      document.getElementById("disp_score").innerHTML = "得点:";
+
+      if (flag_1 = true ) {
+        timer_1 = setInterval("mogura_disp_1()", 500);
+        flag_1 = false;
+      }
+    }
   </script>
 </head>
 <body>
